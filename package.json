@@ -36,9 +36,18 @@
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.14"
   }
-  "homepage": "https://votre-utilisateur.github.io/mon-app-react",
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
 }
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  // Ajoutez ces deux lignes
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
+// Et cette ligne (remplacez par votre URL GitHub)
+"homepage": "https://Light3993.github.io/Arch"
 }
