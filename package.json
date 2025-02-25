@@ -3,11 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://Light3993.github.io/Arch",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-oauth/google": "^0.12.1",
@@ -36,18 +39,4 @@
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.14"
   }
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-  "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  // Ajoutez ces deux lignes
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
-// Et cette ligne (remplacez par votre URL GitHub)
-"homepage": "https://Light3993.github.io/Arch"
 }
